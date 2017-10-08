@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Property>
+    <Address>Address1 Address11</Address>
+    <AgencyCode>LRE</AgencyCode>
+    <Name>Existing Property as LL is same</Name>
+    <Latitude>33.88</Latitude>
+    <Longitude>151.20</Longitude>
+  </Property>
+  <Property>
+    <Address>Address1 Address11</Address>
+    <AgencyCode>LRE</AgencyCode>
+    <Name>Existing Property as LA is same</Name>
+    <Latitude>33.88</Latitude>
+    <Longitude>101.20</Longitude>
+  </Property>
+  <Property>
+    <Address>Address1 Address11</Address>
+    <AgencyCode>LRE</AgencyCode>
+    <Name>Existing Property as LO is same</Name>
+    <Latitude>13.88</Latitude>
+    <Longitude>151.20</Longitude>
+  </Property>
+  <Property>
+    <Address>Address2 Address22</Address>
+    <AgencyCode>LRE</AgencyCode>
+    <Name>New Property as LL is different</Name>
+    <Latitude>113.88</Latitude>
+    <Longitude>101.20</Longitude>
+  </Property>
+  <Property>
+    <Address>Address3 Address33</Address>
+    <AgencyCode>CRE</AgencyCode>
+    <Name>New Property as Agency Code is different</Name>
+    <Latitude>33.88</Latitude>
+    <Longitude>151.20</Longitude>
+  </Property>
+</Properties>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Property>
+    <Address>Address1 Address11</Address>
+    <AgencyCode>CRE</AgencyCode>
+    <Name>Properity Name6</Name>
+    <Latitude>11.12</Latitude>
+    <Longitude>11.12</Longitude>
+  </Property>
+  <Property>
+    <Address>Address2 Address22</Address>
+    <AgencyCode>CRE</AgencyCode>
+    <Name>Name7 Properity</Name>
+    <Latitude>11.11</Latitude>
+    <Longitude>11.11</Longitude>
+  </Property>
+  <Property>
+    <Address>Address3 Address33</Address>
+    <AgencyCode>CRE</AgencyCode>
+    <Name>Properity Name11</Name>
+    <Latitude>11.12</Latitude>
+    <Longitude>11.12</Longitude>
+  </Property>
+</Properties>

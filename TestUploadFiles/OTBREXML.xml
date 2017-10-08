@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Property>
+    <Address>Address1 Address11</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity Name11</Name>
+    <Latitude>11.11</Latitude>
+    <Longitude>11.11</Longitude>
+  </Property>
+  <Property>
+    <Address>Address2@#Address22!$%^*-()</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity Name12</Name>
+    <Latitude>11.11</Latitude>
+    <Longitude>11.11</Longitude>
+  </Property>
+  <Property>
+    <Address>Address3 Address33</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity@# Name13!$%^*-()</Name>
+    <Latitude>11.11</Latitude>
+    <Longitude>11.11</Longitude>
+  </Property>
+  <Property>
+    <Address>Address4@#Address44!$%^*-()</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity@# Name14!$%^*-()</Name>
+    <Latitude>11.11</Latitude>
+    <Longitude>11.11</Longitude>
+  </Property>
+  <Property>
+    <Address>Address6 Address66</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity Name15</Name>
+    <Latitude>11.12</Latitude>
+    <Longitude>11.12</Longitude>
+  </Property>
+  <Property>
+    <Address>Address5 Address55</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity Name16</Name>
+    <Latitude>11.12</Latitude>
+    <Longitude>11.12</Longitude>
+  </Property>
+  <Property>
+    <Address>Address6 Address66</Address>
+    <AgencyCode>OTBRE</AgencyCode>
+    <Name>Properity Name16</Name>
+    <Latitude>11.12</Latitude>
+    <Longitude>11.12</Longitude>
+  </Property>
+</Properties>
