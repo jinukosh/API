@@ -185,8 +185,19 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Core\Entities\Property.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Persistance\Migrations\Configuration.cs" />
+    <Compile Include="Persistance\DomainRSDbContext.cs" />
+    <Compile Include="Persistence\Migrations\201710080733271_InitialTableCreation.cs" />
+    <Compile Include="Persistence\Migrations\201710080733271_InitialTableCreation.Designer.cs">
+      <DependentUpon>201710080733271_InitialTableCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence\Migrations\201710080744058_InitialDataLoad.cs" />
+    <Compile Include="Persistence\Migrations\201710080744058_InitialDataLoad.Designer.cs">
+      <DependentUpon>201710080744058_InitialDataLoad.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -250,6 +261,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Persistence\Migrations\201710080733271_InitialTableCreation.resx">
+      <DependentUpon>201710080733271_InitialTableCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Persistence\Migrations\201710080744058_InitialDataLoad.resx">
+      <DependentUpon>201710080744058_InitialDataLoad.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
