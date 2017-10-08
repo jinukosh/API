@@ -184,14 +184,25 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UploadController.cs" />
     <Compile Include="Core\Entities\Property.cs" />
+    <Compile Include="Core\Services\Enums\AgentCodeEnum.cs" />
+    <Compile Include="Core\Services\Factory\ModelFactory.cs" />
+    <Compile Include="Core\Services\Interfaces\IPropertiesService.cs" />
+    <Compile Include="Core\Services\Interfaces\IPropertyMatcher.cs" />
+    <Compile Include="Core\Services\PropertiesService.cs" />
+    <Compile Include="Core\Services\PropertyMatcherCRE.cs" />
+    <Compile Include="Core\Services\PropertyMatcherLRE.cs" />
+    <Compile Include="Core\Services\PropertyMatcherOTBRE.cs" />
+    <Compile Include="Core\Services\QueryExtensions.cs" />
+    <Compile Include="Core\ViewModels\FileUploadViewModel.cs" />
+    <Compile Include="Core\ViewModels\PropertyViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Persistance\Migrations\Configuration.cs" />
-    <Compile Include="Persistance\DomainRSDbContext.cs" />
+    <Compile Include="Persistence\DomainRSDbContext.cs" />
     <Compile Include="Persistence\Migrations\201710080733271_InitialTableCreation.cs" />
     <Compile Include="Persistence\Migrations\201710080733271_InitialTableCreation.Designer.cs">
       <DependentUpon>201710080733271_InitialTableCreation.cs</DependentUpon>
@@ -200,15 +211,9 @@
     <Compile Include="Persistence\Migrations\201710080744058_InitialDataLoad.Designer.cs">
       <DependentUpon>201710080744058_InitialDataLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persistence\Migrations\Configuration.cs" />
     <Compile Include="Persistence\Queries\GetAllPropertiesQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\Enums\AgentCodeEnum.cs" />
-    <Compile Include="Services\Interfaces\IPropertiesService.cs" />
-    <Compile Include="Services\Interfaces\IPropertyMatcher.cs" />
-    <Compile Include="Services\PropertiesService.cs" />
-    <Compile Include="Services\PropertyMatcherLRE.cs" />
-    <Compile Include="Services\PropertyMatcherOTBRE.cs" />
-    <Compile Include="Services\PropertyMatcherCRE.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -256,7 +261,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -264,10 +271,10 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Upload\UploadFile.cshtml" />
+    <Content Include="Views\Upload\Display.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

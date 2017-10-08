@@ -1,8 +1,32 @@
-﻿
+﻿@model RealEstateUploader.Core.ViewModels.FileUploadViewModel
 @{
+    
     ViewBag.Title = "UploadFile";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Upload File</h2>
+<h2>Upload file</h2>
 
+@using (Html.BeginForm("UploadFile", "Upload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <p class="alert alert-info">Upload file for Property Agent and Validate.</p>
+    <div class="form-group">
+        <span>Please select a file</span>
+        @Html.TextBoxFor(model => model.File, "", new { type = "file", @class = "btn btn-default btn-file", @required = "required" })
+        @Html.ValidationMessageFor(model => model.File, String.Empty, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <span>Please select a property agent</span>
+        @Html.EnumDropDownListFor(model => model.PropertyType, htmlAttributes: new { @id = "ddlAgent", @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.PropertyType, String.Empty, new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Upload" class="btn btn-primary btn-lg" />
+    </div>
+    @ViewBag.Message
+}
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
